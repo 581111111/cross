@@ -5256,12 +5256,14 @@ do
                     clickSensor.Name = '#click-sensor'
                     clickSensor.Size = UDim2.new(1, 0, 0, 16)
                     clickSensor.Text = ''
+                    clickSensor.ZIndex = 35
                     
                     local button = Instance.new('Frame')
                     button.BackgroundColor3 = theme.Button1
                     button.Name = '#button'
                     button.Position = UDim2.new(0, 3, 0, 0)
                     button.Size = UDim2.new(1, -6, 1, 0)
+                    button.ZIndex = 36
                     
                     local round = Instance.new('UICorner')
                     round.CornerRadius = UDim.new(0, rounding and 2 or 0)
@@ -5282,6 +5284,7 @@ do
                     label.TextSize = 14
                     label.TextStrokeColor3 = theme.TextStroke
                     label.TextStrokeTransparency = 0.8
+                    label.ZIndex = 37
                     label.Parent = button
                     
                     button.Parent = clickSensor
@@ -5403,7 +5406,7 @@ do
                     label.TextSize = 14
                     label.TextStrokeColor3 = theme.TextStroke
                     label.TextStrokeTransparency = 0.8
-                    label.ZIndex = 35
+                    label.ZIndex = 36
                     label.Parent = button
                     
                     local icon = Instance.new('ImageLabel')
@@ -5414,7 +5417,7 @@ do
                     icon.Name = '#icon'
                     icon.Position = UDim2.fromScale(1, 0)
                     icon.Size = UDim2.fromOffset(16, 16)
-                    icon.ZIndex = 35
+                    icon.ZIndex = 36
                     icon.Parent = button
                     
                     local gradient = Instance.new('UIGradient')
